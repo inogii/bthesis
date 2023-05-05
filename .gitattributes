@@ -1,2 +1,2 @@
 # Jupyter notebook
-*.ipynb  text eol=lf
+*.ipynb  text diff=python
