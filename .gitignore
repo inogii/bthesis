@@ -1,0 +1,38 @@
+# Ignore files in main
+__pycache__
+AS_graph.graphml
+AS_graph.gt
+as_org_2023_04_09.jsonl
+dataset.npz
+graph_links.json
+graph_nodes.json
+gt_parser_original.py
+properties.json
+peeringdb_20220120.json
+peeringdb_20230409.json
+bgp_paths_out.txt
+asorg.txt
+asrel_toposcope.txt
+.DS_Store
+plot_minmax.pdf
+plot_not_normalized.pdf
+plot_z.pdf
+plot_orig.pdf
+
+#Ignore files in Toposcope
+Toposcope/.DS_Store
+Toposcope/__pycache__
+Toposcope/as_org_2023_04_09.jsonl
+Toposcope/asorg.txt
+Toposcope/aspaths.txt
+Toposcope/asrel.txt
+Toposcope/asrel_toposcope.txt
+Toposcope/bgp_paths_out.txt
+Toposcope/peeringdb_20220120.json
+Toposcope/peeringdb_20230409.json
+Toposcope/routeviews-rv2-20220201-1200.pfx2as
+Toposcope/tmp/
+
+#Ignore files in graphnn
+graphnn
+
