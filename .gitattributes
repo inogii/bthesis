@@ -1,2 +1,2 @@
 # Jupyter notebook
-*.ipynb  text diff=python
+*.ipynb linguist-vendored
