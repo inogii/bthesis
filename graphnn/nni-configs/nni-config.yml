@@ -1,0 +1,21 @@
+# NNI v2.6.0
+
+experimentName: decomp-2022
+trialConcurrency: 4
+maxExperimentDuration: 72h
+
+trainingService:
+  platform: local
+  maxTrialNumberPerGpu: 2
+  useActiveGpu: true
+
+searchSpaceFile: nni-search-space.json
+useAnnotation: false
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+
+trialCommand: python neural_network.py --nni --device cuda --dataset /root/data/ --epochs 50 --num-input-params 26 --num-classes 2 --batch-size 64
+trialCodeDirectory: .
+trialGpuNumber: 1

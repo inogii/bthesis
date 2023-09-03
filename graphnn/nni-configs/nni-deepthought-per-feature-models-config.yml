@@ -1,0 +1,32 @@
+# NNI v2.6.0
+
+#trainingServicePlatform: hybrid
+experimentName: decomp-2022
+trialConcurrency: 16
+maxExperimentDuration: 72h
+trialGpuNumber: 1
+
+trainingService:
+  reuseMode: false
+  platform: remote
+  machineList:
+    - host: deepthought
+      user: root
+      ssh_key_file: /root/.ssh/id_ed25519
+      maxTrialNumberPerGpu: 5
+      useActiveGpu: true
+    - host: 127.0.0.1
+      user: root
+      ssh_key_file: /root/.ssh/id_ed25519
+      maxTrialNumberPerGpu: 3
+      useActiveGpu: true
+
+searchSpaceFile: nni-search-space-per-feature-models.json
+useAnnotation: false
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+
+trialCommand: python neural_network.py --nni --device cuda --epochs 50 --num-input-params 26 --num-classes 2 --batch-size 16
+trialCodeDirectory: .

@@ -1,0 +1,12 @@
+{
+    "model_architecture": {"_type": "choice", "_value": ["GatedGraphConv", "ResGatedGraphConv", "CorrectAndSmooth", "DeepGCNLayer", "GraphUNet", "SignedGCN", "GraphSAGE", "JumpingKnowledge", "RECT_L"]},
+    "learning_rate": {"_type": "loguniform", "_value": [0.0001, 0.001]},
+    "weight_decay": {"_type": "loguniform", "_value": [0.0000001, 0.001]},
+    "lr_scheduler_factor": {"_type": "uniform", "_value": [0.0, 0.5]},
+    "dropout": {"_type": "uniform", "_value": [0, 0.4]},
+    "dropout_gru": {"_type": "uniform", "_value": [0, 0.1]},
+    "hidden_size": {"_type": "randint", "_value": [16,75]},
+    "nunroll": {"_type": "randint", "_value": [3, 7]},
+    "num_layers": {"_type": "randint", "_value": [3, 6]},
+    "dataset": {"_type": "choice", "_value": ["/root/log/","/root/per-feature-min-max"]}
+}

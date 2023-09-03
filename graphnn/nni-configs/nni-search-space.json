@@ -1,0 +1,11 @@
+{
+    "lr_scheduler_factor": {"_type": "uniform", "_value": [0.0, 1]},
+    "dropout": {"_type": "uniform", "_value": [0, 0.6]},
+    "weight_decay": {"_type": "loguniform", "_value": [0.000001, 1]},
+    "learning_rate": {"_type": "loguniform", "_value": [0.000001, 0.1]},
+    "nunroll": {"_type": "randint", "_value": [2, 8]},
+    "num_layers": {"_type": "randint", "_value": [1, 5]},
+    "no_linear_layer_input": {"_type": "choice", "_value": [false, true]},
+    "dropout_gru": {"_type": "uniform", "_value": [0, 0.3]},
+    "hidden_size": {"_type": "choice", "_value": [64,128]}
+}
