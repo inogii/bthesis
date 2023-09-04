@@ -53,7 +53,7 @@ To create the AS graph, the GraphBuilder.py script is used. It needs several dat
 Once the graph is built, it can be enhanced by adding information about the link relationships between the ASes. In order to do this, the TopoScope algorithm is run first, and then by using relationships.py the relationships are added to the graph. 
 A sample file (AS_graph.gt) is provided, to make experimenting with the project easier. Further details on how to build your own AS graph are provided here: [AS graph](graphbuilder.md)
 
-Credits to Pascal Henschke for the work done in his Thesis: [Henschke Thesis](https://mediatum.ub.tum.de/doc/1576026/1576026.pdf)
+Credits to Pascal Henschke for the work done in his Thesis
 
 ### NetworkX dataset
 
